@@ -7,6 +7,7 @@ const Search = () => (
     margin: `0 auto`,
     padding: `var(--space-4) var(--size-gutter)`,
     display: `flex`,
+    height: `20rem`,
     flexDirection: `column`,
     alignItems: `center`,
     justifyContent: `center`,
@@ -16,14 +17,17 @@ const Search = () => (
         color: `black`,
         padding: `0 0 2rem 0`,
         margin: `0`,
+        fontSize: `45px`
         }}>
         Hi, how can we help?
     </h1>
     <input style={{
+        maxWidth: `45rem`,
         width: `95%`,
         height: `40px`,
         border: `none`,
-        borderRadius: `5px`
+        borderRadius: `5px`,
+        paddingLeft: `25px`
     }}
     placeholder="Seach" />
 
