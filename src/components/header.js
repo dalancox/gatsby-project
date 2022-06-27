@@ -8,8 +8,8 @@ import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div  style={{display: `flex`, alignItems: `center`}}>
-      <Link to="https://help.trypura.com/" style={{fontSize: `var(--font-lg)`, textDecoration: `none`, marginRight: `3rem`}}>
+    <div className="header-logo">
+      <Link to="https://help.trypura.com/" className="header-logo-link">
         <div style={{display: `flex`}}>
           <img src={pura} alt="logo" style={{margin: `0 .5rem 0 0`}}></img>
           {siteTitle}
@@ -24,8 +24,8 @@ const Header = ({ siteTitle }) => (
       </div>
     </div>
     
-    <div style={{display: `flex`, alignItems: `center`, justifyContent: `center`}}>
-      <Link to="/" style={{display: `flex`, alignItems: `center`, fontSize: `var(--font-lg)`, textDecoration: `none`, marginRight: `1rem`}}>
+    <div className="shopping-links">
+      <Link to="/" className="sign-in-link">
       <img src={account} style={{margin: `0 .5rem 0 0`}} width="22" height="22"></img>
       <span style={{fontSize: `12px`}}>SIGN IN</span>
       </Link>
