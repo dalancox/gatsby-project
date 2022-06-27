@@ -36,3 +36,9 @@ header {
     text-Decoration: none; 
     margin-right: 1rem;
 }
+
+@media only screen and (max-width: 720px) {
+    .header-links {
+        display: none;
+    }
+}
