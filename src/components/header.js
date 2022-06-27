@@ -2,12 +2,18 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import pura from "../images/Vector.svg"
-import account from "../images/user-solid.svg";
+import account from "../images/user-solid.svg"
 import shop from "../images/bag-shopping-solid.svg"
+import hamburger from "../images/bars-solid.svg"
 import "./header.css"
 
 const Header = ({ siteTitle }) => (
   <header>
+
+    <div className="hamburger-menu">
+      <img src={hamburger} alt="hamburger" style={{margin: `0 .5rem 0 0`}} width="22" height="22"></img>
+    </div>
+
     <div className="header-logo">
       <Link to="https://help.trypura.com/" className="header-logo-link">
         <div style={{display: `flex`}}>
@@ -30,7 +36,7 @@ const Header = ({ siteTitle }) => (
       <span style={{fontSize: `12px`}}>SIGN IN</span>
       </Link>
       
-      <Link to="/">
+      <Link to="/" className="shop">
       <img src={shop} style={{margin: `0 .5rem 0 0`}} width="22" height="22"></img>
       </Link>
     </div>
