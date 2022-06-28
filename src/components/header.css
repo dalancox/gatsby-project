@@ -7,6 +7,12 @@ header {
     background: white;
 }
 
+
+.mobile-view {
+    display: none
+}
+
+
 .header-logo {
     display: flex; 
     align-items: center;
@@ -46,9 +52,37 @@ header {
     display: none;
 }
 
-@media only screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {
     .header-links {
         display: none;
+    }
+
+    .mobile-view {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        left: -110%;
+        padding: 5rem 2rem;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-view  > * {
+        margin: 1rem 0 0 0;
+    }
+
+    .mobile-view  > *:hover {
+        text-decoration: underline;
+    }
+
+    .mobile-view.active {
+        background-color: white;
+        left: 0px;
+        transition: all 0.5s ease;
+        opacity: 1;
+        z-index: 1;
     }
 
     .header-logo-link {
@@ -66,5 +100,6 @@ header {
     .hamburger-menu {
         display: flex;
         cursor: pointer;
+        z-index: 1;
     }
 }
