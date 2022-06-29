@@ -21,7 +21,7 @@ const IndexPage = () => (
     whiteSpace: `nowrap`
   }}>
 
-    <a>
+    <Link to="/walldiffuser">
       <div style={{
         display: `flex`,
         justifyContent: `center`
@@ -29,9 +29,9 @@ const IndexPage = () => (
         <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_imac_family_2x.png" alt width="68" height="68"></img>
       </div>
       <span>Wall Diffuser</span>
-    </a>
+    </Link>
 
-    <a>
+    <Link to="/cardiffuser">
       <div style={{
         display: `flex`,
         justifyContent: `center`
@@ -39,9 +39,9 @@ const IndexPage = () => (
         <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_apple_watch_2x.png" alt width="68" height="68"></img>
       </div>
       <span>Car Diffuser</span>
-    </a>
+    </Link>
 
-    <a>
+    <Link to="/tabletop">
       <div style={{
         display: `flex`,
         justifyContent: `center`
@@ -49,9 +49,9 @@ const IndexPage = () => (
         <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_ipad_family_2x.png" alt width="68" height="68"></img>
       </div>
       <span>Table Top Diffuser</span>
-    </a>
+    </Link>
 
-    <a>
+    <Link to="/subscriptions">
       <div style={{
         display: `flex`,
         justifyContent: `center`
@@ -59,7 +59,7 @@ const IndexPage = () => (
         <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_iphone_family_2x.png" alt width="68" height="68"></img>
       </div>
       <span>Subscriptions</span>
-    </a>
+    </Link>
 
   </div>
 

@@ -1,6 +1,6 @@
 import * as React from "react"
-import { useState } from "react"
-import PropTypes from "prop-types"
+import { useState, useEffect } from "react"
+import PropTypes, { func } from "prop-types"
 import { Link } from "gatsby"
 import pura from "../images/Vector.svg"
 import account from "../images/user-solid.svg"
@@ -14,7 +14,11 @@ import "./header.css"
 const Header = ({ siteTitle }) => {
 
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+
+  const handleClick = () => {
+    setClick(!click)
+    
+  };
 
   return (
     <>
@@ -49,12 +53,12 @@ const Header = ({ siteTitle }) => {
       
       <div className="shopping-links">
         <Link to="/" className="sign-in-link">
-        <img src={account} style={{margin: `0 .5rem 0 0`}} width="22" height="22"></img>
+        <img src={account} style={{margin: `0 .5rem 0 0`}} alt="account" width="22" height="22"></img>
         <span style={{fontSize: `12px`}}>SIGN IN</span>
         </Link>
         
         <Link to="/" className="shop">
-        <img src={shop} style={{margin: `0 .5rem 0 0`}} width="22" height="22"></img>
+        <img src={shop} style={{margin: `0 .5rem 0 0`}} alt="shop" width="22" height="22"></img>
         </Link>
       </div>
       
