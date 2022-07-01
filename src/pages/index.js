@@ -5,7 +5,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SearchBar from "../components/searchBar"
 import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
 
 const IndexPage = () => (
   <>
@@ -16,6 +15,9 @@ const IndexPage = () => (
 
     <div className="img-container" style={{
       display: `flex`,
+      margin: `0 auto`,
+      maxWidth: `var(--size-content)`,
+      padding: `var(--size-gutter)`,
       width: `auto`,
       flexDirection: `row`,
       flexWrap: `wrap`,
@@ -29,7 +31,7 @@ const IndexPage = () => (
           display: `flex`,
           justifyContent: `center`
         }}>
-          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_imac_family_2x.png" alt width="68" height="68"></img>
+          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_imac_family_2x.png" alt="wall diffuser" width="68" height="68"></img>
         </div>
         <span>Wall Diffuser</span>
       </Link>
@@ -39,7 +41,7 @@ const IndexPage = () => (
           display: `flex`,
           justifyContent: `center`
         }}>
-          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_apple_watch_2x.png" alt width="68" height="68"></img>
+          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_apple_watch_2x.png" alt="car diffuser" width="68" height="68"></img>
         </div>
         <span>Car Diffuser</span>
       </Link>
@@ -49,7 +51,7 @@ const IndexPage = () => (
           display: `flex`,
           justifyContent: `center`
         }}>
-          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_ipad_family_2x.png" alt width="68" height="68"></img>
+          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_ipad_family_2x.png" alt="tabletop" width="68" height="68"></img>
         </div>
         <span>Table Top Diffuser</span>
       </Link>
@@ -59,7 +61,7 @@ const IndexPage = () => (
           display: `flex`,
           justifyContent: `center`
         }}>
-          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_iphone_family_2x.png" alt width="68" height="68"></img>
+          <img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/homepage/homepage_productnav_iphone_family_2x.png" alt="subscriptions" width="68" height="68"></img>
         </div>
         <span>Subscriptions</span>
       </Link>

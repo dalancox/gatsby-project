@@ -15,8 +15,10 @@ export default function Index() {
           padding: `var(--size-gutter)`,
         }}
       >
-        <h1>Car Diffuser</h1>
-        <div>Hello from the Wall Diffuser directory</div>
+        <div style={{display: `flex`, justifyContent: `center`, fontSize: `var(--font-lx)`}}>
+          <h1>Car Diffuser</h1>
+        </div>
+        <div>Hello from the Car Diffuser directory</div>
         <Link to="/">Go home</Link>
       </div>
     

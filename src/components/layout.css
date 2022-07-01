@@ -8,6 +8,8 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
+  --font-xxl: 32px;
+  --font-lx: 24px; 
   --font-lg: 18px;
   --font-md: 16px;
   --font-sm: 14px;
@@ -24,6 +26,7 @@
   --size-content: 54rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
+  --breakpoint-md: 720px;
 }
 html {
   -webkit-text-size-adjust: 100%;
@@ -221,7 +224,8 @@ pre tt:after {
 }
 
 .img-container > * {
-  padding: 0 2rem;
+  padding: 0 3rem;
   cursor: pointer;
-  
 }
+
+

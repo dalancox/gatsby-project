@@ -1,4 +1,5 @@
 import React from "react"
+import search from "../images/magnifying-glass-solid.svg"
 
 
 const Search = () => (
@@ -17,11 +18,15 @@ const Search = () => (
         color: `black`,
         padding: `0 0 2rem 0`,
         margin: `0`,
-        fontSize: `45px`
+        fontSize: `var(--font-xxl)`
         }}>
         Hi, how can we help?
     </h1>
-    <input style={{
+    <div style={{
+        maxWidth: `45rem`,
+        width: `95%`,
+    }}>
+<input style={{
         maxWidth: `45rem`,
         width: `95%`,
         height: `40px`,
@@ -30,6 +35,9 @@ const Search = () => (
         paddingLeft: `25px`
     }}
     placeholder="Seach" />
+    </div>
+    
+    
 
 </div>
 

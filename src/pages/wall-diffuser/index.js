@@ -15,7 +15,9 @@ export default function Index() {
           padding: `var(--size-gutter)`,
         }}
       >
-        <h1>Wall Diffuser</h1>
+        <div style={{display: `flex`, justifyContent: `center`, fontSize: `var(--font-lx)`}}>
+          <h1>Wall Diffuser</h1>
+        </div>
         <div>
             <Link to="/wall-diffuser/diffuser-offline">Diffuser Offline</Link>
         </div>

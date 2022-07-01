@@ -1,10 +1,9 @@
 import * as React from "react"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import PropTypes, { func } from "prop-types"
 import { Link } from "gatsby"
 import pura from "../images/Vector.svg"
 import account from "../images/user-solid.svg"
-import shop from "../images/bag-shopping-solid.svg"
 import hamburger from "../images/bars-solid.svg"
 import close from "../images/xmark-solid.svg"
 import "./header.css"
@@ -54,11 +53,6 @@ const Header = ({ siteTitle }) => {
       <div className="shopping-links">
         <Link to="/" className="sign-in-link">
         <img src={account} style={{margin: `0 .5rem 0 0`}} alt="account" width="22" height="22"></img>
-        <span style={{fontSize: `12px`}}>SIGN IN</span>
-        </Link>
-        
-        <Link to="/" className="shop">
-        <img src={shop} style={{margin: `0 .5rem 0 0`}} alt="shop" width="22" height="22"></img>
         </Link>
       </div>
       
