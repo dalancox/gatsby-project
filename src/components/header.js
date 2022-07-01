@@ -36,7 +36,7 @@ const Header = ({ siteTitle }) => {
       </div>
 
       <div className="header-logo">
-        <Link to="https://help.trypura.com/" className="header-logo-link">
+        <Link to="/" className="header-logo-link">
           <div style={{display: `flex`}}>
             <img src={pura} alt="logo" style={{margin: `0 .5rem 0 0`}}></img>
             {siteTitle}

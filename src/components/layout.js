@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Search from "./searchBar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -19,22 +18,18 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          siteUrl
         }
       }
     }
   `)
 
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Search />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
-        }}
-      >
+
+      <div>
         <main>{children}</main>
         <footer
           style={{
