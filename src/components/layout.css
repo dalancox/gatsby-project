@@ -223,9 +223,4 @@ pre tt:after {
   content: none;
 }
 
-.img-container > * {
-  padding: 0 3rem;
-  cursor: pointer;
-}
-
 
