@@ -55,8 +55,33 @@ const IndexPage = () => (
       </Link>
 
     </div>
-    
+
+    <div style={{
+      borderBottom: `solid 1px #ddd`
+    }}></div>
+
+    <div style={{
+      display: `grid`,
+      gridTemplateColumns: `1fr 1fr`,
+      gap: `3rem`,
+      margin: `0 auto`,
+      maxWidth: `var(--size-content)`,
+      padding: `var(--size-gutter)`,
+    }}>
+      <div style={{display: `inline-block`, marginRight: `1rem`}}>
+        <h2>The Pura Promise</h2>
+        <h3 style={{fontSize: `15px`, marginBottom: `0.5rem`}}>SAFE. ECO-FRIENDLY. AND OH-SO PREMIUM.</h3>
+        <p>We're always in the pursuit of creating life-changing fragrances and products in a way that is safe for your entire family while also being environmentally and socially responsible.</p>
+        <Link to="/" style={{color: `blue`}}>Learn More  </Link>
+      </div>
+      <div style={{display: `inline-block`, marginLeft: `1rem`}}>
+        <h2>How do I manage my Subscription?</h2>
+        <p>Take advantage of our easy-to-use swap fragrance feature, all at a 30% discount! Let's go through how to swap the fragrances in your subscription.</p>
+        <Link to="/" style={{color: `blue`}}>Learn More  </Link>
+      </div>
+    </div>
     </Layout>
+
   </>
 
   
