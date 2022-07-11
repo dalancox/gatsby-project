@@ -14,19 +14,16 @@ const Header = ({ siteTitle }) => {
 
   const [click, setClick] = useState(false);
 
-  const handleClick = () => {
-    setClick(!click)
-    
-  };
+  const handleClick = () => {setClick(!click)};
 
   return (
     <>
     <div className={click ? "mobile-view active":"mobile-view"}>
-          <Link to="/">DEVICE</Link>
-          <Link to="/">FRAGRANCES</Link>
-          <Link to="/">BUNDLES</Link>
-          <Link to="/">FRAGRANCES QUIZ</Link>
-      </div>
+        <Link to="/">DEVICE</Link>
+        <Link to="/">FRAGRANCES</Link>
+        <Link to="/">BUNDLES</Link>
+        <Link to="/">FRAGRANCES QUIZ</Link>
+    </div>
 
       <header>
 

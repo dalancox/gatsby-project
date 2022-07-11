@@ -32,12 +32,10 @@ const Search = () => (
         height: `40px`,
         border: `none`,
         borderRadius: `5px`,
-        paddingLeft: `25px`
+        paddingLeft: `10px`
     }}
     placeholder="Seach" />
     </div>
-    
-    
 
 </div>
 
