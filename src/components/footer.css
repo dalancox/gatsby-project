@@ -1,5 +1,15 @@
 /* Footer */
 
+@font-face {    
+    font-family: "HK Grotesk";
+    src: url('../fonts/hk-grotesk/HKGrotesk-Medium.otf');
+}
+
+@font-face {
+    font-family: "HK Grotesk light";
+    src: url('../fonts/hk-grotesk/HKGrotesk-Light.otf');
+}
+
 .mobile-footer-view {
     display: none;
 }
@@ -102,6 +112,7 @@ footer section:nth-child(2) {
 .nav-links a {
     padding-bottom: 3px;
     padding-top: 3px;
+    font-family: "HK Grotesk light";
 }
 
 .nav-links a:hover {
