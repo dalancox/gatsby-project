@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -12,9 +12,11 @@ const Article = ({ data: { markdownRemark } }) => (
     maxWidth: `var(--size-content)`,
     padding: `var(--size-gutter)`,
   }}>
+      <p>{markdownRemark.frontmatter.date}</p>
       <h1>{markdownRemark.frontmatter.title}</h1>
       <div dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-    </div>
+        <Link to="/">Go Home</Link>
+      </div>
   </Layout>
 )
 export const query = graphql`
@@ -23,6 +25,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }
