@@ -19,7 +19,7 @@ export default function Index() {
           <h1>Wall Diffuser</h1>
         </div>
         <div>
-            <Link to="/wall-diffuser/diffuser-offline">Diffuser Offline</Link>
+          <Link to="/article/diffuser-offline">diffuser offline</Link>
         </div>
         <Link to="/">Go home</Link>
       </div>
