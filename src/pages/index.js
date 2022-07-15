@@ -44,7 +44,6 @@ const IndexPage = () => (
         </div>
         <span>Subscriptions</span>
       </Link>
-
     </div>
 
     <div className={styles.breakLine}></div>
