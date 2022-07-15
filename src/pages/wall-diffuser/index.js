@@ -27,7 +27,7 @@ export default function Index() {
           <div className={styles.breakLine}></div>
           <h3>Diffuser Setup</h3>
           <div className={styles.articles}>
-            <Link to="/article/setting-up-your-pura-device">
+            <Link to="/articles/setting-up-your-pura-device">
               <div className={styles.subArticles}>
                 <h4>Set Up Your Pura Diffuser</h4>
                 <p>Learn how to setup your Pura diffuser!</p>
@@ -63,7 +63,7 @@ export default function Index() {
           </div>
           <h3>Diffuser Troubleshooting</h3>
           <div className={styles.articles}>
-            <Link to="/article/diffuser-offline">
+            <Link to="/articles/diffuser-offline">
               <div className={styles.subArticles}>
                 <h4>Diffuser Offline</h4>
                 <p>Learn how to reconnect your Pura diffuser!</p>

@@ -44,7 +44,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   allMarkdownRemark.edges.forEach(({ node }) => {
     reporter.info(`Creating page: article/${node.frontmatter.slug}`)
     createPage({
-      path: `article/${node.frontmatter.slug}`,
+      path: `articles/${node.frontmatter.slug}`,
       component: require.resolve("./src/templates/Article.js"),
       // Create props for our CategoryList.js component
       context: {

@@ -6,7 +6,7 @@ import pura from "../images/Vector.svg"
 import account from "../images/user-solid.svg"
 import hamburger from "../images/bars-solid.svg"
 import close from "../images/xmark-solid.svg"
-import "./header.css"
+import "./styles/header.css"
 
 
 

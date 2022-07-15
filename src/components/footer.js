@@ -1,7 +1,7 @@
 import * as React from "react"
 import { useState } from "react"
 
-import "./footer.css"
+import "./styles/footer.css"
 import logo from "../images/Logo.svg"
 import appleIOS from "../images/apple-ios.svg"
 import googlePlay from "../images/google-play.svg"
