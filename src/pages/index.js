@@ -49,8 +49,8 @@ const IndexPage = () => (
 
     <div className={styles.breakLine}></div>
 
-    <div className={styles.contentSection}>
-      <div style={{display: `flex`, justifyContent: `space-between`, flexWrap: `wrap`, width: `100%`}}>
+    <div className={styles.contentBlock}>
+      <div className={styles.contentSection}>
         <img src="https://cdn.shopify.com/s/files/1/0023/0021/5405/files/streamline-icon-star-rating-one_400x400_1_600x600_crop_center.progressive.png.jpg?v=1647367842" width='250' height='250'></img>
         <div style={{maxWidth: `350px`}}>
           <h2>The Pura Promise</h2>
@@ -63,20 +63,18 @@ const IndexPage = () => (
 
     <div className={styles.breakLine}></div>
 
-  <div className={styles.contentSection}>
-    <div style={{display: `flex`, justifyContent: `space-between`, flexWrap: `wrap`, width: `100%`}}>
+    <div className={styles.contentBlock}>
+      <div className={styles.contentSection}>
         <div  style={{maxWidth: `350px`}}>
-          <h2>How do I manage my Subscription?</h2>
-        <p>Take advantage of our easy-to-use swap fragrance feature, all at a 30% discount! Let's go through how to swap the fragrances in your subscription.</p>
-        <Link to="/" style={{color: `blue`}}>Learn More  </Link>
-        </div>
-        <img src="https://cdn.shopify.com/s/files/1/0023/0021/5405/files/cal_600x600_crop_center.progressive.png.jpg?v=1647369014" width='250' height='250'></img>
+        <h2>How do I manage my Subscription?</h2>
+          <p>Take advantage of our easy-to-use swap fragrance feature, all at a 30% discount! Let's go through how to swap the fragrances in your subscription.</p>
+          <Link to="/" style={{color: `blue`}}>Learn More  </Link>
+          </div>
+          <img src="https://cdn.shopify.com/s/files/1/0023/0021/5405/files/cal_600x600_crop_center.progressive.png.jpg?v=1647369014" width='250' height='250'></img>
       </div>
-  </div>
-    
+    </div>
 
     </Layout>
-
   </>
   
 )

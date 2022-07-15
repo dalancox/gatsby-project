@@ -25,8 +25,15 @@
     border-bottom: 1px solid #ddd;
 }
 
-.content-section {
+.content-block {
     margin: 0 auto;
     max-width: var(--size-content);
     padding: var(--size-gutter);
+}
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
